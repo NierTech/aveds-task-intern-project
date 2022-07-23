@@ -1,9 +1,3 @@
-# Install react-hook-form
-### `npm install react-hook-form`
-
-# Install firebase
-### `npm install firebase`
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

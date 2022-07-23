@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* STYLING HEADER MENU NAVIGATION*/
+.wrapper-header-contents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+.wrapper-header{
+  border-bottom: 1px solid black;
+}
+.wrapper-header-string-contents{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.wrapper-header-contents > h2 {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+.wrapper-header-string-contents > p{
+
+  font-size: 15px;
+  font-family: "Open-sans",sans-serif;
+
+  color: #737373;
+
+  line-height: 24px;
+
+  cursor: pointer;
+}
+.wrapper-header-string-contents > button{
+  padding: 8px 60px;
+
+  border: 2px solid #FF685B;
+  border-radius: 7px;
+
+  background: #FFFFFF;
+  color:#FF685B;
+
+  font-size: 20px;
+  font-family: 'Montserrat';
+
+  cursor: pointer;
+}
+
+/* STYLING MAIN CONTENTS*/
+.wrapper-main{
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin: 150px 0px 10px 150px;
+}
+.wrapper-main-contents > h1{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+.wrapper-main-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 35px;
+}
+.wrapper-main-buttons > button:nth-child(1){
+  color: white;
+
+  padding: 15px 40px;
+
+  background: #FF685B;
+  border: none;
+  border-radius: 5px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+.wrapper-main-buttons > button:nth-child(2){
+  color: #FF685B;
+
+  padding: 15px 40px;
+
+  background: #FFFFFF;
+  border: 1px solid #FF685B;
+  border-radius: 5px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+/*STYLING HELP CARD*/
+.wrapper-card{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+.wrapper-card-background{
+  width: 328px;
+  height: 248px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  padding: 35px;
+}
+.wrapper-card-images-one{
+  background-image: url("../../images/circleSec1.svg");
+  width: 72px;
+  height: 72px;
+}
+.wrapper-card-images-two{
+  background-image: url("../../images/circleSec2.svg");
+  width: 72px;
+  height: 72px;
+}
+.wrapper-card-images-three{
+  background-image: url("../../images/circleSec3.svg");
+  width: 72px;
+  height: 72px;
+}
+.wrapper-card-contents > h2{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  margin-top: 10px;
+}
+.wrapper-card-border-bottom{
+  border-bottom: 2px solid #E74040;
+  width: 50px;
+  margin-top: 10px;
+}
+.wrapper-card-contents > p{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-top: 10px;
+}
+/* STYLING MODAL WINDOW */
+.modal{
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-modal-window{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper-modal-window > h1 {
+  font-family: 'Montserrat';
+  font-size: 35px;
+}
+.wrapper-modal-window > .wrapper-modal-form > input{
+  outline: 0;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 14px;
+  width: 300px;
+  margin: 10px;
+}
+.wrapper-modal-window > .wrapper-modal-form > input::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.wrapper-modal-window > .wrapper-modal-form > .input-button{
+  padding: 10px 20px 10px 20px;
+  background: #FF685B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-close-modal-window > button{
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 400px;
+  margin-bottom: 20px;
+}
+.wrapper-errors-text-validation{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  color: brown;
+}
+.wrapper-modal-window > .wrapper-modal-form > .input-button:disabled{
+  background-color: #252B42;
+}
+/* ADAPTIVE DESIGN */
+@media screen and (max-width: 800px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .wrapper-header-contents{
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrapper-header-string-contents > button {
+    padding: 6px 20px;
+  }
+  .wrapper-main-contents > h1{
+    font-size: 28px;
+    line-height: normal;
+  }
+  .wrapper-main {
+    margin: 10px;
+    padding-top: 50px;
+  }
+  .wrapper-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .button-close-modal-window > button{
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 220px;
+    margin-bottom: 20px;
+  }
+  .wrapper-modal-window > .wrapper-modal-form > input{
+    padding: 10px;
+    width: 200px;
+  }
+  .wrapper-modal-window > h1 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+  }
+}

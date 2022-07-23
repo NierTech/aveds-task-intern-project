@@ -1,8 +1,8 @@
 # install react-hook-form
-### 'npm install react-hook-form'
+### `npm install react-hook-form`
 
 # install firebase
-### 'npm install firebase'
+### `npm install firebase`
 
 # Getting Started with Create React App
 

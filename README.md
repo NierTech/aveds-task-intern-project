@@ -1,8 +1,12 @@
 # Install react-hook-form
 ### `npm install react-hook-form`
 
+# Install react router dom
+### `npm install react-router-dom@6`
+
 # Install firebase
 ### `npm install firebase`
+
 
 # Getting Started with Create React App
 
